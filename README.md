@@ -9,6 +9,7 @@ This is just a collection of links to various physics of flying trapeze related 
 * My YouTube videos
   * [3 video playlist](https://www.youtube.com/playlist?list=PLblpKDDWqoKU1o5ulifhWIWNweV8pj_Jf)
   * [Slow motion swing](https://youtu.be/H5p5m1jFx2E)
+  * [Slow motion miss](https://youtu.be/rRreMULXNbk)
 
 * Part 2, the swing:
   * [Michael Fowler's UVa lecture notes about parametric resonance](http://galileoandeinstein.physics.virginia.edu/7010/CM_20_Parametric_Resonance.html)
