@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1>
+<center>
+Minimal model of the flying trapeze swing as a parametric oscillator
+</center>
+</h1>
+</head>
+<body>
+
+<ul>
+	<li> flier is a point mass (white circle) </li>
+	<li> flying trapeze lines (white) are massless, just act as constraint </li>
+	<li> flier pumps swing by effectively shortening and then lengthening pendulum length at particular part of swing (initiated at 20&deg; to left of centerline, timed to last 1/8 of approximate oscillation period </li>
+	<li> drag is viscous, i.e. constant fractional reduction in velocity per unit time </li>
+	<li> red circles indicate last two peaks of swing </li>
+	<li> red line is perceived weight, blue line is gravity (1 g), for reference </li>
+</ul>
+
+<p> <h3> Press "ready" button to get ready, "hep" to take off </h3> </p>
+<p> adjust amount of curl in/force-out and drag using input boxes below (before or during swing), and remember to press "Set" button to make change take effect </p>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/bonsai/0.4/bonsai.min.js"></script>
+<center>
+<div id="trapeze"></div>
+</center>
+
+<p>
+change in line length for curl/force-out:&nbsp;<input type="text" id="Delta_L_input" value="0.5" size="6">&nbsp;m
+<button onclick="send_Delta_L()">Set</button>
+</p>
+
+<p>
+drag amount:&nbsp;<input type="text" id="drag_input" value="0.02" size="6">&nbsp;1/s
+<button onclick="send_drag()">Set</button>
+</p>
+
+<script>
+
+var trapeze = bonsai.run(document.getElementById('trapeze'), {
+    code: function () {
+
+var theta0 = 50*Math.PI/180.0;
+
+var L0 = 5.0; // m
+var g = 9.8; // m/s^3
+var dt = 0.01;
+var dt_2 = dt*dt;
+var dt_3 = dt_2*dt;
+var dt_4 = dt_3*dt;
+
+// also available from HTML
+var Delta_L = 0.5; // m
+var drag = 0.02; // 1/s
+
+var pull_start_angle = -20.0*Math.PI/180.0; // rad
+
+var period = 2.0 * Math.PI / Math.sqrt(g/L0);
+var pull_duration = period/8.0;
+var origin = [ stage.options.width/2.0, 0 ];
+var len_units = stage.options.height*0.5 / L0;
+var flier_rad = stage.options.height/40;
+
+var cur_t = 0.0;
+var p = [ Math.sin(theta0)*L0, -Math.cos(theta0)*L0 ];
+var v = [ 0.0, 0.0 ];
+var in_pull = false;
+
+theta_half = theta0;
+
+new Rect(0,0,stage.options.width,stage.options.height).addTo(stage)
+	.fill('black');
+
+
+var rightmost_flier = new Circle(origin[0]+p[0]*len_units,origin[1]-p[1]*len_units,flier_rad).addTo(stage)
+        .fill('red')
+        .stroke('red',2);
+var leftmost_flier = new Circle(origin[0]+p[0]*len_units,origin[1]-p[1]*len_units,flier_rad).addTo(stage)
+        .fill('red')
+        .stroke('red',2);
+var flier = new Circle(origin[0]+p[0]*len_units,origin[1]-p[1]*len_units,flier_rad).addTo(stage)
+        .fill('white')
+        .stroke('blue',2);
+var lines = new Path( [origin[0], origin[1], origin[0]+p[0]*len_units, origin[1]-p[1]*len_units])
+	.stroke('white',2).addTo(stage);
+var accel = new Path( [origin[0]+p[0]*len_units, origin[1]-p[1]*len_units, origin[0]+p[0]*len_units, origin[1]-p[1]*len_units])
+	.stroke('red',2).addTo(stage);
+var gravity = new Path( [origin[0]+p[0]*len_units, origin[1]-p[1]*len_units, origin[0]+p[0]*len_units, origin[1]-p[1]*len_units])
+	.stroke('blue',2).addTo(stage);
+
+var ready_button = new Circle(stage.width-40, stage.height-40, 30).addTo(stage)
+	.fill('yellow').on('click',ready);
+var ready_text = new Text('ready').addTo(stage).attr({
+        'textAlign': 'center',
+        'fontFamily' : 'Arial, sans-serif',
+        'fontSize': '20',
+        'textFillColor': 'black',
+        'textStrokeColor': 'black',
+        'x' : stage.width-40,
+        'y' : stage.options.height-48})
+        .on('click', ready);
+var hep_button = new Circle(stage.width-40, stage.height-40, 30) // .addTo(stage)
+	.fill('green').on('click',hep);
+var hep_text = new Text('hep').attr({
+        'textAlign': 'center',
+        'fontFamily' : 'Arial, sans-serif',
+        'fontSize': '20',
+        'textFillColor': 'black',
+        'textStrokeColor': 'black',
+        'x' : stage.width-40,
+        'y' : stage.options.height-48})
+        .on('click', hep);
+
+var Delta_L_button = new Rect(stage.width-220, stage.height-65, 140, 50).addTo(stage)
+	.fill('white');
+var Delta_L_text = new Text('Delta L = '+Delta_L).addTo(stage).attr({
+        'textAlign': 'left',
+        'fontFamily' : 'Arial, sans-serif',
+        'fontSize': '20',
+        'textFillColor': 'black',
+        'textStrokeColor': 'black',
+        'x' : stage.width-210,
+        'y' : stage.options.height-48});
+var drag_button = new Rect(stage.width-350, stage.height-65, 120, 50).addTo(stage)
+	.fill('white');
+var drag_text = new Text('drag = '+drag).addTo(stage).attr({
+        'textAlign': 'left',
+        'fontFamily' : 'Arial, sans-serif',
+        'fontSize': '20',
+        'textFillColor': 'black',
+        'textStrokeColor': 'black',
+        'x' : stage.width-340,
+        'y' : stage.options.height-48});
+
+
+var ready = false;
+function ready(e) {
+	ready=true;
+	hep_button.addTo(stage);
+	hep_text.addTo(stage);
+	ready_button.remove();
+	ready_text.remove();
+}
+function hep(e) {
+	if (ready) {
+		hep_button.remove()
+		hep_text.remove()
+		fly();
+	}
+
+}
+
+function pauseBrowser(millis) {
+    var date = Date.now();
+    var curDate = null;
+    do {
+        curDate = Date.now();
+    } while (curDate-date < millis);
+}
+
+var prev_frame_time = 0.0;
+var frame_interval = 1.0/60.0;
+
+var vprev = [0.0, 0.0]
+
+function fly_step() {
+	// _half step p with initial v
+	p_half = [ p[0] + 0.5*dt*v[0], p[1] + 0.5*dt*v[1] ];
+
+	theta_half_prev = theta_half;
+	theta_half = Math.PI/2.0 + Math.atan2(p_half[1], p_half[0]);
+
+	// check to see if starting tp pull
+	if ((theta_half_prev > pull_start_angle) && (theta_half <= pull_start_angle)) {
+	    in_pull = true;
+	    pull_start_time = cur_t;
+	}
+	// advance time counter
+	cur_t += 0.5*dt;
+	// check to see if ended pull
+	if (in_pull && (cur_t > pull_start_time + pull_duration)) {
+	    in_pull = false;
+	}
+
+	// set L1 depending on pull
+	if (in_pull) {
+	    L1 = L0 - Delta_L*0.5*(1.0-Math.cos(2.0*Math.PI*(cur_t-pull_start_time)/pull_duration));
+	} else {
+	    L1 = L0;
+	}
+
+	// calculate unit vector parallel to p_half
+	p_half_mag = Math.sqrt(p_half[0]*p_half[0] + p_half[1]*p_half[1]);
+	p_half_hat = [ p_half[0] / p_half_mag, p_half[1]/p_half_mag ];
+
+	// calculate quadratic coefficients for constraint
+	quad_a = ( 0.25*dt_4 );
+	quad_b = ( dt_2*(p[0]*p_half_hat[0]+p[1]*p_half_hat[1]) + dt_3*(v[0]*p_half_hat[0] + 
+		   v[1]*p_half_hat[1]) - 0.5*dt_4*g*(p_half_hat[1]) )
+	quad_c = ( (p[0]*p[0]+p[1]*p[1]) + dt_2*(v[0]*v[0]+v[1]*v[1]) + 0.25 * dt_4 * g*g +
+		   2.0*dt*(p[0]*v[0] + p[1]*v[1]) - dt_2*g*(p[1]) - dt_3*g*(v[1]) - L1*L1)
+
+	// solve constraint and calculate acceleration at half step
+	a_mag = (-quad_b + Math.sqrt(quad_b*quad_b - 4.0 * quad_a * quad_c) ) / (2.0 * quad_a);
+	a_half = [a_mag * p_half_hat[0], a_mag * p_half_hat[1] - g ];
+
+	// full step v using acceleration from half step
+	v = [ v[0] + dt*a_half[0], v[1] + dt*a_half[1] ];
+	v = [v[0] * (1.0-drag*dt), v[1] * (1.0-drag*dt) ];
+
+	// _half step p with new v
+	p = p_half.slice()
+	p[0] += dt/2.0 * v[0]
+	p[1] += dt/2.0 * v[1]
+
+	now = Date.now()/1000.0;
+	if (now > prev_frame_time + frame_interval) {
+		// move flier
+		flier.attr({ x: origin[0]+p[0]*len_units, y: origin[1]-p[1]*len_units });
+
+		// move lines
+		s = lines.segments();
+		s[1][1] = origin[0]+p[0]*len_units;
+		s[1][2] = origin[1]-p[1]*len_units;
+		lines.segments(s);
+
+		// move accel arrow
+		s = accel.segments();
+		s[0][1] = origin[0] + p[0]*len_units;
+		s[0][2] = origin[1] - p[1]*len_units;
+		s[1][1] = origin[0] + p[0]*len_units - a_half[0]*len_units/10;
+		s[1][2] = origin[1] - p[1]*len_units + a_half[1]*len_units/10+g*len_units/10;
+		accel.segments(s);
+
+		// move gravity arrow
+		s = gravity.segments();
+		s[0][1] = origin[0] + p[0]*len_units;
+		s[0][2] = origin[1] - p[1]*len_units;
+		s[1][1] = origin[0] + p[0]*len_units;
+		s[1][2] = origin[1] - p[1]*len_units + g*len_units/10;
+		gravity.segments(s);
+
+		// move maxima marks
+		if ((v[0] > 0.0) && (vprev[0] < 0.0)) {
+			rightmost_flier.attr({ x: origin[0]+p[0]*len_units, y: origin[1]-p[1]*len_units });
+		}
+		if ((v[0] < 0.0) && (vprev[0] > 0.0)) {
+			leftmost_flier.attr({ x: origin[0]+p[0]*len_units, y: origin[1]-p[1]*len_units });
+		}
+
+		vprev = v.slice();
+		// save current time
+		prev_frame_time = now;
+	}
+
+	cur_t += 0.5*dt;
+	// draw again in dt
+	setTimeout(fly_step, dt*1000);
+}
+
+function fly(e) {
+	console.log("fly");
+
+
+	setTimeout(fly_step, dt*1000);
+
+}
+
+stage.on('message:Delta_L', function(data) {
+		Delta_L = parseFloat(data.nodeData);
+		Delta_L_text.attr('text', 'Delta L = '+Delta_L);
+	});
+stage.on('message:drag', function(data) {
+		drag = parseFloat(data.nodeData);
+		drag_text.attr('text', 'drag = '+drag);
+	});
+
+} ,
+    width: 700,
+    height: 400
+  });
+
+function send_Delta_L() {
+	trapeze.sendMessage('Delta_L', {
+		nodeData: document.getElementById('Delta_L_input').value
+	});
+};
+function send_drag() {
+	trapeze.sendMessage('drag', {
+		nodeData: document.getElementById('drag_input').value
+	});
+};
+
+</script>
+
+</body>
+</html>
