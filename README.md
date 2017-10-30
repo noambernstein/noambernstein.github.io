@@ -17,7 +17,7 @@ This is just a collection of links to various physics of flying trapeze related 
 * Part 3, the miss:
   * [Youtube version of Andy Ruina's talk](https://www.youtube.com/watch?v=4JbVo4n1AU4&feature=youtu.be) (starting around 23:00)
   * [Youtube video about cats flipping recommended by Andy Ruina](https://www.youtube.com/watch?v=yGusK69XVlk)
-  * [Stack Exchange astronauts turning] (https://space.stackexchange.com/questions/2954/how-do-astronauts-turn-in-space/2970)
+  * [Stack Exchange astronauts turning](https://space.stackexchange.com/questions/2954/how-do-astronauts-turn-in-space/2970)
   * [Wikipedia cat flipping](https://en.wikipedia.org/wiki/Cat_righting_reflex)
   * [Youtube Smarter Everyday 85 astronauts rotating in space](https://www.youtube.com/watch?v=VJcno_XL4RU)
   * [Youtube Smarter Everyday 58 cat flipping reflex](https://www.youtube.com/watch?v=RtWbpyjJqrU)
