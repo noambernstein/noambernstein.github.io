@@ -14,6 +14,7 @@ This is just a collection of links to various physics of flying trapeze related 
 * Part 2, the swing:
   * [Michael Fowler's UVa lecture notes about parametric resonance](http://galileoandeinstein.physics.virginia.edu/7010/CM_20_Parametric_Resonance.html)
   * [WikiPedia parametric oscillator page](https://en.wikipedia.org/wiki/Parametric_oscillator)
+  * [A writeup of the math of the swing](swing.md)
 
 * Part 3, the miss:
   * [Youtube version of Andy Ruina's talk](https://www.youtube.com/watch?v=4JbVo4n1AU4&feature=youtu.be) (starting around 23:00)
