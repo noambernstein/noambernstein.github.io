@@ -22,7 +22,16 @@ swing height.
 
 ### Raising and lowering the flyer's CoM
 
-The geometry of the rig and the flyer is shown in Fig. 1.  
+The geometry of the rig and the flyer is shown in Fig. 1m, with (at best) approximate 
+dimensions. The lowest possible center of mass position is with a straight flyer at the 
+bottom of the swing (pulse), 4.76~m below the fly-bar crane. The initial position of
+the flyer is approximated as a ``7'', with horizontal arms.
+ 
+<figure>
+  <img src="rig.svg" width="800" alt="Figure 1: the rig" />
+  <figcaption> Figure 1: geometry of the rig and the flyer.</figcaption>
+</figure>
 
-<img src="rig.svg" width="800" alt="Figure 1: the rig" />
-Figure 1: geometry of the rig and the flyer
+
+For simplicity, I assume that the system starts with entirely potential energy, determined by the 
+initial flyer center of mass height, ignoring the fact that the body shape is not extended.
