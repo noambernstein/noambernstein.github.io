@@ -24,9 +24,5 @@ swing height.
 
 The geometry of the rig and the flyer is shown in Fig. 1.  
 
-![Figure 1: The rig](/rig.svg)
-
-<img src="rig.svg" width="800" />
-
-
-Figure 1: the rig.
+<img src="rig.svg" width="800" alt="Figure 1: the rig/>
+Figure 1: geometry of the rig and the flyer
