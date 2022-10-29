@@ -57,8 +57,9 @@ Solving for $F$ in terms of $K$ gives
 ```math
 \omega = \sqrt{\frac{2 K}{m r^2}}
 ```
+and substituting into the expression for $F$ gives
 ```math
-F = \frac{2 K}{r} = \frac{2 2.286~kJ}{4.76~m} = 960.5~N
+F = \frac{2 K}{m r^2} m r = \frac{2 K}{r} = \frac{2 2.286~kJ}{4.76~m} = 960.5~N
 ```
 and the corresponding acceleration 
 ```math
