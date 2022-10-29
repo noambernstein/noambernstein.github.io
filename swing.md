@@ -60,6 +60,6 @@ F = \frac{2 K}{r} = \frac{2 2.286~kJ}{4.76~m} = 960.5~N
 ```
 and the corresponding acceleration 
 ```math
-a = F / m = 12.8`m/s^2 = 1.3~g
+a = F / m = 12.8~m/s^2 = 1.3~g
 ```
 in addition to the $1~g$ exerted by gravity.
