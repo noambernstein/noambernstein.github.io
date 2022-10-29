@@ -66,3 +66,5 @@ and the corresponding acceleration
 a = F / m = 12.8~m/s^2 = 1.3~g
 ```
 in addition to the $1~g$ exerted by gravity.
+
+Some detailed measurements of the human body are in https://msis.jsc.nasa.gov/sections/section03.htm
