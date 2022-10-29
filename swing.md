@@ -56,6 +56,8 @@ F = m \omega^2 r.
 Solving for $F$ in terms of $K$ gives
 ```math
 \omega = \sqrt{\frac{2 K}{m r^2}}
+```
+```math
 F = \frac{2 K}{r} = \frac{2 2.286~kJ}{4.76~m} = 960.5~N
 ```
 and the corresponding acceleration 
