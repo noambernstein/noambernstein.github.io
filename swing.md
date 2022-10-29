@@ -31,7 +31,8 @@ the flyer is approximated as a "7", with horizontal arms.
   <img src="rig.svg" width="800" alt="Figure 1: the rig" />
   <figcaption> Figure 1: geometry of the rig and the flyer.</figcaption>
 </figure>
-
+  
+  
 For simplicity, I assume that the system starts with only potential energy, determined by the 
 initial flyer center of mass height, ignoring the fact that the body shape is not extended.
 The initial potential energy (relative to the lowest height) is therefore
