@@ -26,7 +26,7 @@ The geometry of the rig and the flyer is shown in Fig. 1.
 
 ![Figure 1: The rig](/rig.svg)
 
-<img src="https://github.com/noambernstein/noambernstein.github.io/blob/master/rig.svg" width="200" />
+<img src="https://github.com/noambernstein/noambernstein.github.io/blob/master/rig.svg" width="800" />
 
 
 Figure 1: the rig.
