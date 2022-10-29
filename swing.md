@@ -40,7 +40,7 @@ The initial potential energy (relative to the lowest height) is therefore
 ```math
 V(t = 0) = m \, g \, \Delta h = 75~kg \, g \, (4.76~m - 1.65~m) = 2.286~kJ
 ```
-where $g = 9.8~m/s^2$ is the acceleration of gravity, and the mass of the flyer is 75&nbsl;kg (165&nbsp;lbs).
+where $g = 9.8~m/s^2$ is the acceleration of gravity, and the mass of the flyer is 75&nbsp;kg (165&nbsp;lbs).
 At the bottom of the swing the potential energy is $V = 0$, so (assuming the flyer remains rigid)
 at that point the kinetic energy is equal to the initial potential energy.
 The rotational kinetic energy for a point mass rotating about an axis is
