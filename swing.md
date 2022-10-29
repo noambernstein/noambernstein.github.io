@@ -35,4 +35,5 @@ the flyer is approximated as a "7", with horizontal arms.
 For simplicity, I assume that the system starts with only potential energy, determined by the 
 initial flyer center of mass height, ignoring the fact that the body shape is not extended.
 The initial potential energy (relative to the lowest height) is therefore
-$$ V = g (4.76 m - 1.65 m) 75 kg = 2.286~kJ.$$ At the bottom of the swing the potential energy is $V = 0$.
+$$ V = g (4.76 m - 1.65 m) 75 kg = 2.286~kJ.$$
+At the bottom of the swing the potential energy is $V = 0$.
