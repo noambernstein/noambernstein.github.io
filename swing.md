@@ -45,14 +45,14 @@ The rotational kinetic energy for a point mass rotating about an axis is
 ```math
 K = \frac{1}{2} I \omega^2 = \frac{1}{2} \omega^2 m r^2
 ```
-where $I = m r^2$ is the moment of intertia, $\omage = \dot{\theta}$ is the angular velocity,
+where $I = m r^2$ is the moment of intertia, $\omega = \dot{\theta}$ is the angular velocity,
 
 and the centrifugal pseudo-force the flyer feels is
 ```math
 F = m \omega^2 r.
 ```
 Solving for $F$ in terms of $K$ gives
-```\math
+```math
 \omega = \sqrt{\frac{2 K}{m r^2}}
 F = \frac{2 K}{r} = \frac{2 2.286~kJ}{4.76~m} = 960.5~N
 ```
