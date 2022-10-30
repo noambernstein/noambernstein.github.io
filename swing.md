@@ -79,7 +79,7 @@ Below I will approximate these as $0.9\~m$ and $0.65\~m$.
 ### Raising and lowering the flyer's CoM
 
 The geometry of the rig and the flyer is shown in Fig.&nbsp;2, with (at best) approximate 
-dimensions. The lowest possible center of mass position is with a straight flyer at the 
+dimensions. The lowest possible center of mass position is with a fully extended flyer at the 
 bottom of the swing (pulse), 4.54&nbsp;m below the fly-bar crane. The initial position of
 the flyer is approximated as a "7", with horizontal arms.
  
@@ -103,19 +103,18 @@ The rotational kinetic energy for a point mass rotating about an axis is
 ```math
 K = \frac{1}{2} I \omega^2 = \frac{1}{2} \omega^2 m r^2
 ```
-where $I = m r^2$ is the moment of intertia, $\omega = \dot{\theta}$ is the angular velocity,
-
+where $I = m r^2$ is the moment of inertia, $\omega = \dot{\theta}$ is the angular velocity,
 and the centrifugal pseudo-force the flyer feels is
 ```math
 F = m \omega^2 r.
 ```
-Solving for $F$ in terms of $K$ gives
+Solving for $\omega$ in terms of $K$ gives
 ```math
 \omega = \sqrt{\frac{2 K}{m r^2}}
 ```
 and substituting into the expression for $F$ gives
 ```math
-F = \frac{2 K}{m r^2} m r = \frac{2 K}{r} = \frac{2 2.124~kJ}{4.54~m} = 935~N
+F = \frac{2 K}{m r^2} m r = \frac{2 K}{r} = \frac{2 \times 2.124~kJ}{4.54~m} = 935~N
 ```
 and the corresponding acceleration 
 ```math
