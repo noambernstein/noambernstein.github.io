@@ -10,7 +10,7 @@ analysis at
 [www.flying-trapeze.com](https://www.flying-trapeze.com/resources/physics-of-flying-trapeze/item/4311-investigation-6-an-advanced-swing).
 In addition, as the muscles cause body parts to rotate around the
 axes defined by the joints, they apply torques and change the angular
-momentum of {\em parts} of the flyer (although the total angular
+momentum of _parts_ of the flyer (although the total angular
 momentum is conserved).  This is definitely the way flyers flip
 over, for exampe in a face-off or a miss, but it is unclear if
 the same effect can significantly affect the swing.  
@@ -24,7 +24,7 @@ swing height.
 
 Some detailed measurements of the human body part mass and weight are in Tables I and II. Based on these 
 measurements I calculated the height of the CoM of the flyer when fully extended, and when raising the
-legs by bending 180$^\circ$ at the hips, as in the initial part of a force out.  A diagram of these
+legs by bending $180^\circ$ at the hips, as in the initial part of a force out.  A diagram of these
 two positions and the resulting CoM positions is shown in Fig.&nbsp;1. The position of the extended
 flyer's center of mass, measured from the fly bar (end of arms) in terms of fraction of body height is
 ```math
@@ -38,7 +38,7 @@ h_\mathrm{extended} = 0.155 f_\mathrm{arms} + 0.205 f_\mathrm{head} + 0.44 f_\ma
  0.44 f_\mathrm{ul} + 0.175 f_\mathrm{ll} = 0.364
 ```
 
-Table&nbsp;I: body part volumes (from https://msis.jsc.nasa.gov/sections/section03.htm Fig.&nbsp;3.3.6.3.2-1 2 of 12)
+Table&nbsp;I: body part volumes, based on https://msis.jsc.nasa.gov/sections/section03.htm Fig.&nbsp;3.3.6.3.2-1 panel 2 of 12.
 | body part | fraction of total volume |
 | ----------| --------------- |
 | head + neck | 6.5 % |
@@ -50,10 +50,9 @@ Table&nbsp;I: body part volumes (from https://msis.jsc.nasa.gov/sections/section
 
 Table&nbsp;II: Body part lengths, based on https://msis.jsc.nasa.gov/sections/section03.htm Fig.&nbsp;3.3.1.3-1 with some 
 additional personal observations.
-From 2 of 12: overall height. Directly from height and 8 of 12 (or from its differences): hips-floor (upper + lower legs). 
-From cited measurements and estimated offset between shoulders as measured in cited figure and shoulder joint: 
-shoulder joint-hips (torso), shoulder joint-top of head. Estimated from personal observation: fraction of overall legs (hip-floor)
-contributed by upper and lower legs, arm length.
+From panel 2 of 12: overall height. Directly from height and panel 8 of 12 (or from its differences): hips-floor (upper + lower legs). 
+From cited measurements and estimated offset between shoulder joing and cited figure shoulder height: 
+shoulder joint-hips (torso), shoulder joint-top of head (head and neck). Estimated from personal observation: fraction of overall legs (hip-floor) accounted for by the upper and lower legs, arm length.
 | body part | fraction of height |
 | --------- | ------------------ |
 | head and neck | 0.21 |
