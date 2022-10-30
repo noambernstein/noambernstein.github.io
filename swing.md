@@ -118,6 +118,6 @@ F = \frac{2 K}{m r^2} m r = \frac{2 K}{r} = \frac{2 \times 2.124~kJ}{4.54~m} = 9
 ```
 and the corresponding acceleration 
 ```math
-a = F / m = 12.5~m/s^2 = 1.25~g
+a = F / m = 12.5~m/s^2 = 1.3~g
 ```
 in addition to the $1\~g$ exerted by gravity.
