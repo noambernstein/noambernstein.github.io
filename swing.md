@@ -83,8 +83,8 @@ Table&nbsp;I: body part volumes (from https://msis.jsc.nasa.gov/sections/section
 | lower arms + hands | 4.5 % |
 
 Table&nbsp;II: body part lengths (approximated from https://msis.jsc.nasa.gov/sections/section03.htm Fig.&nbsp;3.3.1.3-1.
-Overall height from 2 of 12. Directly from height and  8 of 12 (or from its differences): hips-floor (upper + lower legs), shoulders - hips
-(torso), head + neck. Estimated from personal observation: separate upper legs just over 0.5 of of hips-floor, arm length torso + 0.05.
+Overall height from 2 of 12. Directly from height and 8 of 12 (or from its differences): hips-floor (upper + lower legs). Estimating offset
+between shoulders as measured in cited figure and shoulder joint: shoulders - hips (torso), shoulder joint - top of head. Estimated from personal observation: separate upper legs just over 0.5 of of hips-floor, arm length torso + 0.05.
 2 of 12 and 8 of 12)
 | body part | fraction of height |
 | --------- | ------------------ |
