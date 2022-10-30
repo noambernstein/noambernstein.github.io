@@ -72,9 +72,11 @@ shoulder joint-hips (torso), shoulder joint-top of head (head and neck). Estimat
   </figcaption>
 </figure>
 
+&nbsp;
+
 Assuming that the flyer is 1.8&nbsp;m tall (5'11"), the distance from the hands to
-the center of mass fully extended is $0.89\~m$, and when raising legs it is $0.66\~m$.
-Below I will approximate these as $0.9\~m$ and $0.65\~m$.
+the center of mass fully extended is $0.89\~\mathrm{m}$, and when raising legs it is $0.66\~m$.
+Below I will approximate these as $0.9\~\mathrm{m}$ and $0.65\~\mathrm{m}$.
 
 ### Raising and lowering the flyer's CoM
 
@@ -92,11 +94,12 @@ the flyer is approximated as a "7", with horizontal arms.
 
 For simplicity, I assume that the system starts with only potential energy, determined by the 
 initial flyer center of mass height, ignoring the fact that the body shape is not extended.
+The initial height of the CoM above its lowest point is $(4.54 - 1.65)\~\mathrm{m} = 2.89\~\mathrm{m}$.
 The initial potential energy (relative to the lowest height) is therefore
 ```math
-V(t = 0) = m \, g \, \Delta h = 75~kg \, g \, (4.54~m - 1.65~m) = 2.124~kJ
+V(t = 0) = m \, g \, \Delta h = 75~\mathrm{kg} \, g \, (4.54~\mathrm{m} - 1.65~\mathrm{m}) = 2.124~\mathrm{kJ}
 ```
-where $g = 9.8\~m/s^2$ is the acceleration of gravity, and the mass of the flyer is 75&nbsp;kg (165&nbsp;lbs).
+where $g = 9.8\~\mathrm{m/s^2}$ is the acceleration of gravity, and the mass of the flyer is 75&nbsp;kg (165&nbsp;lbs).
 At the bottom of the swing the potential energy is $V = 0$, so (assuming the flyer remains rigid)
 at that point the kinetic energy is equal to the initial potential energy.
 The rotational kinetic energy for a point mass rotating about an axis is
@@ -121,3 +124,59 @@ and the corresponding acceleration
 a = F / m = 12.5~m/s^2 = 1.3~g
 ```
 in addition to the $1\~g$ exerted by gravity.
+
+If the flyer raises or lowers their CoM they can change their potential or kinetic energy, but 
+cannot affect their angular momentum.  I therefore compute the change in the swing if the
+flyer raises their legs at the bottom of the swing, doing work against gravity and the 
+centrifugal pseudo-force, while keeping angular momentum constant.
+
+The increase in potential energy due to the $\Delta r = 0.25\~m$ raising of the center of mass by lifting
+the legs is
+```math
+\Delta~V = m g \Delta~r = 184\~J.
+```
+The angular momentum fully extended is
+```math
+L = I \omega = m r^2 \omega_i
+```
+and after raising the legs it is
+```math
+L = m (r-\Delta~r)^2 \omega_f
+```
+Solving for the final angular velocity gives
+```math
+\omega_f = \omega_i \frac{r^2}{(r-\Delta~r)^2}
+```
+The corresponding change in kinetic energy is
+```math
+K_f - K_i = 
+\frac{1}{2} \left( m (r - \Delta~r)^2 \omega_f^2 - m r^2 \omega_i^2 \right) = 
+\frac{1}{2} m \omega_i^2 \left( (r - \Delta r)^2 \frac{r^4}{(r - \Delta~r)^4} \omega_i^2 - r^2 \right) =
+\frac{1}{2} m \omega_i^2 \left( \frac{r^4}{(r-\Delta~r)^2} - r^2 \right) =
+\frac{1}{2} m \omega_i^2 r^2 \left( \frac{r^2}{(r-\Delta~r)^2} - 1 \right)
+```
+With $\Delta\~r = 0.25$&nbsp;m the fractional change of the kinetic energy of 12%, or 262&nbsp;J.
+The increase of the total energy of the system is $184 + 262$&nbsp;J, to 2.63&nbsp;kJ. This
+corresponds to a final height of 3.58&nbsp;m above the lowest point. 
+
+When the flyer reaches peak, $3.58\~\mathrm{m} - 2.89\~\mathrm{m} = 0.7\~\mathrm{m}$ higher
+than the beginning of the swing, their potential energy is maximized and kinetic energy is zero.
+If they could extend their legs to increase $r$ back to its initial value without otherwise changing
+their energy, they could go back to this new, larger height at the back of the the swing,
+swing forward, and repeat the process. The gain in energy (and therefore height) from the next
+swing will be even larger: the change in potential energy will be the same, but because the
+initial height is larger, the value of $\omega$ at the bottom will be larger, so the kinetic
+energy gain will be larger as well.
+
+Note, however, that this simplistic analysis neglects two factors. The first is that changes in
+body position at the back end of the swing are required for the flyer to avoid hitting the back
+of their legs on the board. The other is that if the flyer is not exactly horizontal at peak,
+extending the legs will lower the CoM somewhat, and lose some potential energy.  The change
+in height of the CoM is exactly $\Delta r \cos \theta$. The peak angle can be determined
+from $\cos \theta = (4.54 - 3.48) / 4.54 = 0.211$, so the loss of height will be 0.05&nbsp;m.
+The flyer will therefore gain only 0.84&nbsp;m, rather than 0.89&nbsp;m.
+
+Even this analysis neglects the fact that the lines are flexible, not rigid, so the flyer cannot
+extend their legs exactly at peak without creating slack in the lines. As a result, the extension
+has to happen more gradually, using gravity and the centrifugral pseudo-force to keep the lines
+taut. A quantitative description of this effect is beyond the scope of this work.
