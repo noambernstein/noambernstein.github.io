@@ -67,7 +67,10 @@ a = F / m = 12.8~m/s^2 = 1.3~g
 ```
 in addition to the $1~g$ exerted by gravity.
 
-Some detailed measurements of the human body are in Tables I and II.
+Some detailed measurements of the human body part mass and weight are in Tables I and II. Based on these 
+measurements I calculated the height of the CoM of the flyer when fully extended, and when raising the
+legs by bending 180$^\circ$ at the hips, as in the initial part of a force out.  A diagram of these
+two positions and the resulting CoM positions is shown in Fig.&nbsp;2.
 
 Table&nbsp;I: body part volumes (from https://msis.jsc.nasa.gov/sections/section03.htm Fig.&nbsp;3.3.6.3.2-1 2 of 12)
 | body part | fraction of total volume |
@@ -86,7 +89,8 @@ Overall height from 2 of 12. Directly from height and  8 of 12 (or from its diff
 | body part | fraction of height |
 | --------- | ------------------ |
 | head and neck | 0.21 |
-| arms | 0.31 |
 | torso | 0.26 |
 | lower legs | 0.27 |
 | upper legs | 0.26 |
+| arms | 0.31 |
+
