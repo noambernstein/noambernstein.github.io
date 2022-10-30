@@ -20,57 +20,12 @@ swing height.
 
 ## Mechanisms
 
-### Raising and lowering the flyer's CoM
-
-The geometry of the rig and the flyer is shown in Fig.&nbsp;1m, with (at best) approximate 
-dimensions. The lowest possible center of mass position is with a straight flyer at the 
-bottom of the swing (pulse), 4.76&nbsp;m below the fly-bar crane. The initial position of
-the flyer is approximated as a "7", with horizontal arms.
- 
-<figure>
-  <img src="rig.svg" width="800" alt="Figure 1: the rig" />
-  <figcaption> Figure 1: geometry of the rig and the flyer.</figcaption>
-</figure>
-
-&nbsp;
-
-For simplicity, I assume that the system starts with only potential energy, determined by the 
-initial flyer center of mass height, ignoring the fact that the body shape is not extended.
-The initial potential energy (relative to the lowest height) is therefore
-```math
-V(t = 0) = m \, g \, \Delta h = 75~kg \, g \, (4.76~m - 1.65~m) = 2.286~kJ
-```
-where $g = 9.8~m/s^2$ is the acceleration of gravity, and the mass of the flyer is 75&nbsp;kg (165&nbsp;lbs).
-At the bottom of the swing the potential energy is $V = 0$, so (assuming the flyer remains rigid)
-at that point the kinetic energy is equal to the initial potential energy.
-The rotational kinetic energy for a point mass rotating about an axis is
-```math
-K = \frac{1}{2} I \omega^2 = \frac{1}{2} \omega^2 m r^2
-```
-where $I = m r^2$ is the moment of intertia, $\omega = \dot{\theta}$ is the angular velocity,
-
-and the centrifugal pseudo-force the flyer feels is
-```math
-F = m \omega^2 r.
-```
-Solving for $F$ in terms of $K$ gives
-```math
-\omega = \sqrt{\frac{2 K}{m r^2}}
-```
-and substituting into the expression for $F$ gives
-```math
-F = \frac{2 K}{m r^2} m r = \frac{2 K}{r} = \frac{2 2.286~kJ}{4.76~m} = 960.5~N
-```
-and the corresponding acceleration 
-```math
-a = F / m = 12.8~m/s^2 = 1.3~g
-```
-in addition to the $1~g$ exerted by gravity.
+### Geometry of the flyer
 
 Some detailed measurements of the human body part mass and weight are in Tables I and II. Based on these 
 measurements I calculated the height of the CoM of the flyer when fully extended, and when raising the
 legs by bending 180$^\circ$ at the hips, as in the initial part of a force out.  A diagram of these
-two positions and the resulting CoM positions is shown in Fig.&nbsp;2. The position of the extended
+two positions and the resulting CoM positions is shown in Fig.&nbsp;1. The position of the extended
 flyer's center of mass, measured from the fly bar (end of arms) in terms of fraction of body height is
 ```math
 h_\mathrm{extended} = 0.155 f_\mathrm{arms} + 0.205 f_\mathrm{head} + 0.44 f_\mathrm{torso} +
@@ -108,12 +63,63 @@ contributed by upper and lower legs, arm length.
 | arms | 0.31 |
 
 <figure>
-  <img src="flyer.svg" width="800" alt="Figure 2: the flyer" />
+  <img src="flyer.svg" width="800" alt="Figure 1: the flyer" />
   <figcaption>
-  Figure 2: geometry of the flyer, fully extended and
+  Figure 1: geometry of the flyer, fully extended and
   raising legs in the initial stage of the force out.  Blue
   arrows show extent of each body part, and black arrows show 
   position of CoM of each body part, and red arrows
   show the position of the flyer's CoM.
   </figcaption>
 </figure>
+
+Assuming that the flyer is 1.8&nbsp;m tall (5'11"), the distance from the hands to
+the center of mass fully extended is $0.89~m$, and when raising legs it is $0.66~m$.
+Below I will approximate these as $0.9~m$ and $0.65~m$.
+
+### Raising and lowering the flyer's CoM
+
+The geometry of the rig and the flyer is shown in Fig.&nbsp;2, with (at best) approximate 
+dimensions. The lowest possible center of mass position is with a straight flyer at the 
+bottom of the swing (pulse), 4.54&nbsp;m below the fly-bar crane. The initial position of
+the flyer is approximated as a "7", with horizontal arms.
+ 
+<figure>
+  <img src="rig.svg" width="800" alt="Figure 1: the rig" />
+  <figcaption> Figure 2: geometry of the rig and the flyer.</figcaption>
+</figure>
+
+&nbsp;
+
+For simplicity, I assume that the system starts with only potential energy, determined by the 
+initial flyer center of mass height, ignoring the fact that the body shape is not extended.
+The initial potential energy (relative to the lowest height) is therefore
+```math
+V(t = 0) = m \, g \, \Delta h = 75~kg \, g \, (4.54~m - 1.65~m) = 2.124~kJ
+```
+where $g = 9.8~m/s^2$ is the acceleration of gravity, and the mass of the flyer is 75&nbsp;kg (165&nbsp;lbs).
+At the bottom of the swing the potential energy is $V = 0$, so (assuming the flyer remains rigid)
+at that point the kinetic energy is equal to the initial potential energy.
+The rotational kinetic energy for a point mass rotating about an axis is
+```math
+K = \frac{1}{2} I \omega^2 = \frac{1}{2} \omega^2 m r^2
+```
+where $I = m r^2$ is the moment of intertia, $\omega = \dot{\theta}$ is the angular velocity,
+
+and the centrifugal pseudo-force the flyer feels is
+```math
+F = m \omega^2 r.
+```
+Solving for $F$ in terms of $K$ gives
+```math
+\omega = \sqrt{\frac{2 K}{m r^2}}
+```
+and substituting into the expression for $F$ gives
+```math
+F = \frac{2 K}{m r^2} m r = \frac{2 K}{r} = \frac{2 2.124~kJ}{4.54~m} = 935~N
+```
+and the corresponding acceleration 
+```math
+a = F / m = 12.5~m/s^2 = 1.25~g
+```
+in addition to the $1~g$ exerted by gravity.
