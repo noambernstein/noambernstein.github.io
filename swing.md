@@ -196,7 +196,11 @@ in height of the CoM is exactly $\Delta r \cos \theta$. The peak angle can be de
 from $\cos \theta = (4.54 - 3.58) / 4.54 = 0.211$, so the loss of height will be 0.05&nbsp;m.
 The flyer will therefore gain only 0.84&nbsp;m, rather than 0.89&nbsp;m.
 
-Even this analysis neglects the fact that the lines are flexible, not rigid, so the flyer cannot
-extend their legs exactly at peak without creating slack in the lines. As a result, the extension
-has to happen more gradually, using gravity and the centrifugral pseudo-force to keep the lines
-taut. A quantitative description of this effect is beyond the scope of this work.
+Even this analysis neglects the fact that the lines are flexible, not rigid, and 
+moving CoM away from the rotation axis formed by the fly-bar crane requires 
+pushing away from the fly bar. Since the mass of the flyer is much larger than
+the bar, without a force pulling the flyer away from the axis most of the
+motion would actually be pushing the bar toward the axis, creating slack in the
+lines. As a result, the extension has to happen more gradually, using gravity and the 
+centrifugral pseudo-force to pull the flyer awy from the axis and keep the lines taut. 
+A quantitative description of this effect is beyond the scope of this work.
