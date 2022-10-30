@@ -74,8 +74,8 @@ contributed by upper and lower legs, arm length.
 </figure>
 
 Assuming that the flyer is 1.8&nbsp;m tall (5'11"), the distance from the hands to
-the center of mass fully extended is $0.89~m$, and when raising legs it is $0.66~m$.
-Below I will approximate these as $0.9~m$ and $0.65~m$.
+the center of mass fully extended is $0.89 m$, and when raising legs it is $0.66~m$.
+Below I will approximate these as $0.9 m$ and $0.65 m$.
 
 ### Raising and lowering the flyer's CoM
 
