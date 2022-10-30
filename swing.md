@@ -67,5 +67,26 @@ a = F / m = 12.8~m/s^2 = 1.3~g
 ```
 in addition to the $1~g$ exerted by gravity.
 
-Some detailed measurements of the human body are in https://msis.jsc.nasa.gov/sections/section03.htm, in particular 
-Fig.&nbsp;Figure 3.3.6.3.2-1.
+Some detailed measurements of the human body are in Tables I and II.
+
+Table&nbsp;I: body part volumes (from https://msis.jsc.nasa.gov/sections/section03.htm Fig.&nbsp;3.3.6.3.2-1 2 of 12)
+| body part | fraction of total volume |
+| ----------| --------------- |
+| head + neck | 6.5 % |
+| torso | 56 % |
+| upper legs | 15.5 % |
+| lower legs | 11.5 % |
+| upper arms | 6 % |
+| lower arms + hands | 4.5 % |
+
+Table&nbsp;II: body part lengths (approximated from https://msis.jsc.nasa.gov/sections/section03.htm Fig.&nbsp;3.3.1.3-1.
+Overall height from 2 of 12. Directly from height and  8 of 12 (or from its differences): hips-floor (upper + lower legs), shoulders - hips
+(torso), head + neck. Estimated from personal observation: separate upper legs just over 0.5 of of hips-floor, arm length torso + 0.05.
+2 of 12 and 8 of 12)
+| body part | fraction of height |
+| --------- | ------------------ |
+| head and neck | 0.21 |
+| arms | 0.31 |
+| torso | 0.26 |
+| lower legs | 0.27 |
+| upper legs | 0.26 |
