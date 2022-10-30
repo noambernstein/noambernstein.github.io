@@ -18,7 +18,7 @@ the same effect can significantly affect the swing.
 Here I quantitatively analyze the effects of various motions on
 swing height.
 
-## Mechanisms
+## The swing
 
 ### Geometry of the flyer
 
@@ -78,7 +78,7 @@ Assuming that the flyer is 1.8&nbsp;m tall (5'11"), the distance from the hands 
 the center of mass fully extended is $0.89\~\mathrm{m}$, and when raising legs it is $0.66\~m$.
 Below I will approximate these as $0.9\~\mathrm{m}$ and $0.65\~\mathrm{m}$.
 
-### Raising and lowering the flyer's CoM
+### The effect of raising and lowering the flyer's CoM
 
 The geometry of the rig and the flyer is shown in Fig.&nbsp;2, with (at best) approximate 
 dimensions. The lowest possible center of mass position is with a fully extended flyer at the 
