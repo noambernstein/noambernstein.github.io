@@ -89,7 +89,7 @@ the flyer is approximated as a "7", with horizontal arms.
   <img src="rig.svg" width="800" alt="Figure 1: the rig" />
   <figcaption> 
     Figure 2: geometry of the rig and the flyer. The lines
-    are 3.64&nbsp;m or 12', and the board is 2.8&nbsp;m or 9.2' below
+    are 3.64&nbsp;m or 12' long, and the board is 2.8&nbsp;m or 9.2' below
     the fly-bar crane.
  </figcaption>
 </figure>
