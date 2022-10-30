@@ -113,6 +113,7 @@ contributed by upper and lower legs, arm length.
   Figure 2: geometry of the flyer, fully extended and
   raising legs in the initial stage of the force out.  Blue
   arrows show extent of each body part, and black arrows show 
-  position of center of mass of each body part.
+  position of CoM of each body part, and red arrows
+  show the position of the flyer's CoM.
   </figcaption>
 </figure>
