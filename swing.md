@@ -70,7 +70,18 @@ in addition to the $1~g$ exerted by gravity.
 Some detailed measurements of the human body part mass and weight are in Tables I and II. Based on these 
 measurements I calculated the height of the CoM of the flyer when fully extended, and when raising the
 legs by bending 180$^\circ$ at the hips, as in the initial part of a force out.  A diagram of these
-two positions and the resulting CoM positions is shown in Fig.&nbsp;2.
+two positions and the resulting CoM positions is shown in Fig.&nbsp;2. The position of the extended
+flyer's center of mass, measured from the fly bar (end of arms) in terms of fraction of body height is
+```math
+h_\mathrm{extended} = 0.155 f_\mathrm{arms} + 0.205 f_\mathrm{head} + 0.44 f_\mathrm{torso} +
+ 0.7 f_\mathrm{ul} + 0.965 f_\mathrm{ll} = 0.495
+```
+where $f_\mathrm{part}$ is the mass fraction from Table&nbsp;I, "ul" stands for upper legs, and "ll" stands for lower legs.
+For the force-out position the CoM position is
+```math
+h_\mathrm{extended} = 0.155 f_\mathrm{arms} + 0.205 f_\mathrm{head} + 0.44 f_\mathrm{torso} +
+ 0.44 f_\mathrm{ul} + 0.175 f_\mathrm{ll} = 0.364
+```
 
 Table&nbsp;I: body part volumes (from https://msis.jsc.nasa.gov/sections/section03.htm Fig.&nbsp;3.3.6.3.2-1 2 of 12)
 | body part | fraction of total volume |
@@ -82,10 +93,12 @@ Table&nbsp;I: body part volumes (from https://msis.jsc.nasa.gov/sections/section
 | upper arms | 6 % |
 | lower arms + hands | 4.5 % |
 
-Table&nbsp;II: body part lengths (approximated from https://msis.jsc.nasa.gov/sections/section03.htm Fig.&nbsp;3.3.1.3-1.
-Overall height from 2 of 12. Directly from height and 8 of 12 (or from its differences): hips-floor (upper + lower legs). Estimating offset
-between shoulders as measured in cited figure and shoulder joint: shoulders - hips (torso), shoulder joint - top of head. Estimated from personal observation: separate upper legs just over 0.5 of of hips-floor, arm length torso + 0.05.
-2 of 12 and 8 of 12)
+Table&nbsp;II: Body part lengths, based on https://msis.jsc.nasa.gov/sections/section03.htm Fig.&nbsp;3.3.1.3-1 with some 
+additional personal observations.
+From 2 of 12: overall height. Directly from height and 8 of 12 (or from its differences): hips-floor (upper + lower legs). 
+From cited measurements and estimated offset between shoulders as measured in cited figure and shoulder joint: 
+shoulder joint-hips (torso), shoulder joint-top of head. Estimated from personal observation: fraction of overall legs (hip-floor)
+contributed by upper and lower legs, arm length.
 | body part | fraction of height |
 | --------- | ------------------ |
 | head and neck | 0.21 |
