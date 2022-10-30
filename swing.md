@@ -22,11 +22,11 @@ swing height.
 
 ### Geometry of the flyer
 
-Some detailed measurements of the human body part mass and weight are in Tables I and II. Based on these 
-measurements I calculated the height of the CoM of the flyer when fully extended, and when raising the
-legs by bending $180^\circ$ at the hips, as in the initial part of a force out.  A diagram of these
-two positions and the resulting CoM positions is shown in Fig.&nbsp;1. The position of the extended
-flyer's center of mass, measured from the fly bar (end of arms) in terms of fraction of body height is
+Some detailed measurements of  human body part masses and weights are listed in Tables&nbsp;I and II. Based 
+on these measurements I calculated the height of the CoM of the flyer when fully extended, and when 
+raising the legs by bending $180^\circ$ at the hips, as in the initial part of a force out.  A diagram of 
+these two positions and the resulting CoM positions is shown in Fig.&nbsp;1. The position of the extended
+flyer's center of mass, measured from the fly bar (ends of arms) in terms of fraction of body height is
 ```math
 h_\mathrm{extended} = 0.155 f_\mathrm{arms} + 0.205 f_\mathrm{head} + 0.44 f_\mathrm{torso} +
  0.7 f_\mathrm{ul} + 0.965 f_\mathrm{ll} = 0.495
@@ -38,7 +38,7 @@ h_\mathrm{extended} = 0.155 f_\mathrm{arms} + 0.205 f_\mathrm{head} + 0.44 f_\ma
  0.44 f_\mathrm{ul} + 0.175 f_\mathrm{ll} = 0.364
 ```
 
-Table&nbsp;I: body part volumes, based on https://msis.jsc.nasa.gov/sections/section03.htm Fig.&nbsp;3.3.6.3.2-1 panel 2 of 12.
+Table&nbsp;I: body part volumes, based on https://msis.jsc.nasa.gov/sections/section03.htm Fig.&nbsp;3.3.6.3.2-1 panel 2 of 12. Note that for limbs, the values below include both right and left limbs.
 | body part | fraction of total volume |
 | ----------| --------------- |
 | head + neck | 6.5 % |
