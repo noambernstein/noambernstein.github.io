@@ -78,7 +78,7 @@ Assuming that the flyer is 1.8&nbsp;m tall (5'11"), the distance from the hands 
 the center of mass fully extended is $0.89\~\mathrm{m}$, and when raising legs it is $0.66\~m$.
 Below I will approximate these as $0.9\~\mathrm{m}$ and $0.65\~\mathrm{m}$.
 
-### The effect of raising and lowering the flyer's CoM
+### The swing of a still, rigid flyer
 
 The geometry of the rig and the flyer is shown in Fig.&nbsp;2, with (at best) approximate 
 dimensions. The lowest possible center of mass position is with a fully extended flyer at the 
@@ -129,6 +129,8 @@ and the corresponding acceleration
 a = F / m = 12.5~m/s^2 = 1.3~g
 ```
 in addition to the $1\~g$ exerted by gravity.
+
+### The effect of raising and lowering the flyer's CoM
 
 If the flyer raises or lowers their CoM they can change their potential or kinetic energy, but 
 cannot affect their angular momentum.  I therefore compute the change in the swing if the
