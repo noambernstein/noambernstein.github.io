@@ -25,20 +25,20 @@ swing height.
 Some detailed measurements of  human body part masses and weights are listed in Tables&nbsp;I and II. Based 
 on these measurements I calculated the height of the CoM of the flyer when fully extended, and when 
 raising the legs by bending $180^\circ$ at the hips, as in the initial part of a force out.  A diagram of 
-these two positions and the resulting CoM positions is shown in Fig.&nbsp;1. The position of the extended
+these two body positions and the resulting CoM positions is shown in Fig.&nbsp;1. The position of the extended
 flyer's center of mass, measured from the fly bar (ends of arms) in terms of fraction of body height is
 ```math
 h_\mathrm{extended} = 0.155 f_\mathrm{arms} + 0.205 f_\mathrm{head} + 0.44 f_\mathrm{torso} +
  0.7 f_\mathrm{ul} + 0.965 f_\mathrm{ll} = 0.495
 ```
-where $f_\mathrm{part}$ is the mass fraction from Table&nbsp;I, "ul" stands for upper legs, and "ll" stands for lower legs.
+where $f_\mathrm{part}$ is the mass fraction of each body part from Table&nbsp;I, "ul" stands for upper legs, and "ll" stands for lower legs.
 For the force-out position the CoM position is
 ```math
 h_\mathrm{extended} = 0.155 f_\mathrm{arms} + 0.205 f_\mathrm{head} + 0.44 f_\mathrm{torso} +
  0.44 f_\mathrm{ul} + 0.175 f_\mathrm{ll} = 0.364
 ```
 
-Table&nbsp;I: body part volumes, based on https://msis.jsc.nasa.gov/sections/section03.htm Fig.&nbsp;3.3.6.3.2-1 panel 2 of 12. Note that for limbs, the values below include both right and left limbs.
+Table&nbsp;I: body part volumes, based on https://msis.jsc.nasa.gov/sections/section03.htm Fig.&nbsp;3.3.6.3.2-1 panel 2 of 12. Note that for limbs, the values below include the sum of right and left.
 | body part | fraction of total volume |
 | ----------| --------------- |
 | head + neck | 6.5 % |
@@ -51,7 +51,7 @@ Table&nbsp;I: body part volumes, based on https://msis.jsc.nasa.gov/sections/sec
 Table&nbsp;II: Body part lengths, based on https://msis.jsc.nasa.gov/sections/section03.htm Fig.&nbsp;3.3.1.3-1 with some 
 additional personal observations.
 From panel 2 of 12: overall height. Directly from height and panel 8 of 12 (or from its differences): hips-floor (upper + lower legs). 
-From cited measurements and estimated offset between shoulder joing and cited figure shoulder height: 
+From cited measurements and estimated offset between shoulder joint and cited figure shoulder height: 
 shoulder joint-hips (torso), shoulder joint-top of head (head and neck). Estimated from personal observation: fraction of overall legs (hip-floor) accounted for by the upper and lower legs, arm length.
 | body part | fraction of height |
 | --------- | ------------------ |
@@ -66,9 +66,9 @@ shoulder joint-hips (torso), shoulder joint-top of head (head and neck). Estimat
   <figcaption>
   Figure 1: geometry of the flyer, fully extended and
   raising legs in the initial stage of the force out.  Blue
-  arrows show extent of each body part, and black arrows show 
-  position of CoM of each body part, and red arrows
-  show the position of the flyer's CoM.
+  arrows show extent of each body part as fraction of overall
+  height, black arrows show position of CoM of each body part, and 
+  red arrows show the position of the flyer's overall CoM.
   </figcaption>
 </figure>
 
@@ -87,14 +87,19 @@ the flyer is approximated as a "7", with horizontal arms.
  
 <figure>
   <img src="rig.svg" width="800" alt="Figure 1: the rig" />
-  <figcaption> Figure 2: geometry of the rig and the flyer.</figcaption>
+  <figcaption> 
+    Figure 2: geometry of the rig and the flyer. The lines
+    are $3.64\~\mathrm{m} = 12'$, and the board is $2.8\~\mathrm{m} = 9.2'$ below
+    the fly-bar crane.
+ </figcaption>
 </figure>
 
 &nbsp;
 
 For simplicity, I assume that the system starts with only potential energy, determined by the 
 initial flyer center of mass height, ignoring the fact that the body shape is not extended.
-The initial height of the CoM above its lowest point is $(4.54 - 1.65)\~\mathrm{m} = 2.89\~\mathrm{m}$.
+The initial height of the CoM above its lowest point is roughly estimated to be 
+$(4.54 - 1.65)\~\mathrm{m} = 2.89\~\mathrm{m}$.
 The initial potential energy (relative to the lowest height) is therefore
 ```math
 V(t = 0) = m \, g \, \Delta h = 75~\mathrm{kg} \, g \, (4.54~\mathrm{m} - 1.65~\mathrm{m}) = 2.124~\mathrm{kJ}
