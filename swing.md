@@ -193,7 +193,7 @@ body position at the back end of the swing are required for the flyer to avoid h
 of their legs on the board. The other is that if the flyer is not exactly horizontal at peak,
 extending the legs will lower the CoM somewhat, and lose some potential energy.  The change
 in height of the CoM is exactly $\Delta r \cos \theta$. The peak angle can be determined
-from $\cos \theta = (4.54 - 3.48) / 4.54 = 0.211$, so the loss of height will be 0.05&nbsp;m.
+from $\cos \theta = (4.54 - 3.58) / 4.54 = 0.211$, so the loss of height will be 0.05&nbsp;m.
 The flyer will therefore gain only 0.84&nbsp;m, rather than 0.89&nbsp;m.
 
 Even this analysis neglects the fact that the lines are flexible, not rigid, so the flyer cannot
