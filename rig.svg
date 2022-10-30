@@ -24,9 +24,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="1.2499943"
-     inkscape:cx="208.80095"
-     inkscape:cy="162.80074"
+     inkscape:zoom="2.5801932"
+     inkscape:cx="319.7435"
+     inkscape:cy="43.988954"
      inkscape:window-width="1371"
      inkscape:window-height="891"
      inkscape:window-x="0"
@@ -140,12 +140,12 @@
        transform="translate(-4.9874162e-8,-0.1312559)" />
     <path
        style="fill:#0719ff;fill-opacity:1;stroke:#000000;stroke-width:0.499744;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleStart);marker-end:url(#marker7772)"
-       d="m 161.05561,1.899353 0.0941,23.408408"
+       d="m 162.64312,1.899353 0.0941,23.408408"
        id="path7551"
        sodipodi:nodetypes="cc" />
     <g
        id="g2545"
-       transform="translate(12.700002)">
+       transform="translate(14.287503)">
       <text
          xml:space="preserve"
          style="font-size:3.175px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1"
@@ -211,7 +211,8 @@
       </g>
     </g>
     <g
-       id="g2849">
+       id="g2849"
+       transform="translate(3.7041668)">
       <path
          style="fill:#0719ff;fill-opacity:1;stroke:#000000;stroke-width:0.518927;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleStart);marker-end:url(#marker7772)"
          d="m 144.9129,2.0030811 0.18092,13.1275929"
@@ -278,25 +279,29 @@
          id="path2956"
          sodipodi:nodetypes="cc" />
     </g>
-    <path
-       style="fill:#0719ff;fill-opacity:1;stroke:#000000;stroke-width:0.538186;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleStart);marker-end:url(#marker7772)"
-       d="m 145.10645,18.791537 0.0935,27.327827"
-       id="path3075"
-       sodipodi:nodetypes="cc" />
     <g
-       id="g3097"
-       transform="translate(-2.8901267,26.315253)">
-      <text
-         xml:space="preserve"
-         style="font-size:3.175px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1"
-         x="149.69421"
-         y="12.849008"
-         id="text3095"><tspan
-           sodipodi:role="line"
-           id="tspan3093"
-           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
+       id="g627"
+       transform="translate(-0.52916667)">
+      <path
+         style="fill:#0719ff;fill-opacity:1;stroke:#000000;stroke-width:0.538186;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleStart);marker-end:url(#marker7772)"
+         d="m 149.33981,18.791537 0.0935,27.327827"
+         id="path3075"
+         sodipodi:nodetypes="cc" />
+      <g
+         id="g3097"
+         transform="translate(1.3432067,26.315253)">
+        <text
+           xml:space="preserve"
+           style="font-size:3.175px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1"
            x="149.69421"
-           y="12.849008">2.89 m</tspan></text>
+           y="12.849008"
+           id="text3095"><tspan
+             sodipodi:role="line"
+             id="tspan3093"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
+             x="149.69421"
+             y="12.849008">2.89 m</tspan></text>
+      </g>
     </g>
     <g
        id="g3193"
@@ -359,14 +364,49 @@
     <text
        xml:space="preserve"
        style="font-size:3.175px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
-       x="104.60195"
+       x="103.01444"
        y="9.8324614"
        id="text5358"><tspan
          sodipodi:role="line"
          id="tspan5356"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
-         x="104.60195"
-         y="9.8324614">θ</tspan></text>
+         x="103.01444"
+         y="9.8324614">θ = -70°</tspan></text>
+    <g
+       id="g423"
+       transform="translate(-10.054167)">
+      <path
+         style="fill:#0719ff;fill-opacity:1;stroke:#000000;stroke-width:0.518927;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleStart);marker-end:url(#marker7772)"
+         d="m 145.73322,2.0030811 0.18092,8.3080249"
+         id="path415"
+         sodipodi:nodetypes="cc" />
+      <g
+         id="g421"
+         transform="translate(-3.3453015,-4.723546)">
+        <text
+           xml:space="preserve"
+           style="font-size:3.175px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1"
+           x="149.69421"
+           y="12.849008"
+           id="text419"><tspan
+             sodipodi:role="line"
+             id="tspan417"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
+             x="149.69421"
+             y="12.849008">1.3 m</tspan></text>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:1.76389px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';fill:#0000ff;stroke:#ff0000;stroke-width:0.15;stroke-dasharray:0.3, 0.15"
+       x="104.66816"
+       y="8.590251"
+       id="text757"><tspan
+         sodipodi:role="line"
+         id="tspan755"
+         style="stroke-width:0.15"
+         x="104.66816"
+         y="8.590251"> </tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
