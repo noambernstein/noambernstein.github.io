@@ -94,3 +94,12 @@ between shoulders as measured in cited figure and shoulder joint: shoulders - hi
 | upper legs | 0.26 |
 | arms | 0.31 |
 
+<figure>
+  <img src="flyer.svg" width="800" alt="Figure 2: the flyer" />
+  <figcaption>
+  Figure 2: geometry of the flyer, fully extended and
+  raising legs in the initial stage of the force out.  Blue
+  arrows show extent of each body part, and black arrows show 
+  position of center of mass of each body part.
+  </figcaption>
+</figure>
